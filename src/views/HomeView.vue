@@ -3,7 +3,7 @@
     Home
     <FilterNav @changeFilter="handleChangeFilter" :filterType="filterType"></FilterNav>
     <div v-if="projects.length">
-      <div v-for="project in projects" :key="project.id">
+      <div v-for="project in filteredProjects" :key="project.id">
         <Project :project="project" @deleted="handleDeleted" @completed="handleCompleted"></Project>
       </div>
     </div>
@@ -44,6 +44,19 @@ export default {
     },
     handleChangeFilter(by) {
       this.filterType = by
+    },
+  },
+  computed:{
+    filteredProjects(){
+      if (this.filterType === 'completed'){
+        return this.projects.filter((project)=> project.complete);
+      }
+
+      if (this.filterType === 'ongoing'){
+        return this.projects.filter((project)=> !project.complete);
+      }
+
+      return this.projects
     }
   }
 }
