@@ -15,7 +15,6 @@ export default {
           .catch(err => console.log(err))
     },
     completeProject() {
-      console.log(!this.project.complete)
       fetch(this.url, {
         method: "PATCH",
         headers: {'Content-Type': 'application/json'},
@@ -30,13 +29,15 @@ export default {
 </script>
 
 <template>
-  <div class="project" :class="{complete: project.complete}"  @click="isShowDetail = !isShowDetail">
+  <div class="project" :class="{complete: project.complete}" @click="isShowDetail = !isShowDetail">
     <div class="action">
       <h3>{{ project.title }}</h3>
       <div class="icons">
-             <span class="material-symbols-outlined">
+        <router-link :to="{name:'edit.project', params:{id: project.id}}">
+            <span class="material-symbols-outlined">
               edit
             </span>
+        </router-link>
         <span class="material-symbols-outlined" @click.stop="deleteProject">
               delete
             </span>

@@ -4,25 +4,25 @@
       "id": "1",
       "title": "Create new homepage banner",
       "detail": "Lorem ipsum",
-      "complete": false
+      "complete": true
     },
     {
       "id": "2",
-      "title": "Make marketing email",
-      "detail": "Lorem ipsum",
-      "complete": false
+      "title": "iqbal atma",
+      "detail": "Lorem ipsums",
+      "complete": true
     },
     {
       "id": "de6b",
       "title": "Cupidatat laboris of",
       "detail": "In cupidatat consect",
-      "complete": false
+      "complete": true
     },
     {
       "id": "abb3",
       "title": "Dolorum eligendi dic",
       "detail": "Laborum Minim qui e",
-      "complete": false
+      "complete": true
     }
   ]
 }
