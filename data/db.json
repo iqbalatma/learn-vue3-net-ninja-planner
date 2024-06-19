@@ -1,3 +1,28 @@
 {
-  "projects": []
+  "projects": [
+    {
+      "id": "1",
+      "title": "Create new homepage banner",
+      "detail": "Lorem ipsum",
+      "complete": false
+    },
+    {
+      "id": "2",
+      "title": "Make marketing email",
+      "detail": "Lorem ipsum",
+      "complete": false
+    },
+    {
+      "id": "de6b",
+      "title": "Cupidatat laboris of",
+      "detail": "In cupidatat consect",
+      "complete": false
+    },
+    {
+      "id": "abb3",
+      "title": "Dolorum eligendi dic",
+      "detail": "Laborum Minim qui e",
+      "complete": false
+    }
+  ]
 }
